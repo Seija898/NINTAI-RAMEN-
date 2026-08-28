@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="main.js" defer></script>
+    <!-- Agrega aquí la etiqueta del Favicon -->
+    <link rel="icon" type="image/png" href="src/img/navbarlogo.png">
+    <title>Nintai Ramen Restaurante</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="index.html">
+            <div class="logo"></div>
+        </a>
+
+        <!-- Navegación principal (Escritorio / Desplegable en Móvil) -->
+        <div id="navMenuJS" class="navMenu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Especialidad</a></li>
+            </ul>
+            <div class="ctaSection">
+                <button class="ctaBtn">Reservar una mesa</button>
+            </div>
+        </div>
+
+        <!-- Botón Hamburguesa -->
+        <button id="hamburgeBtn" class="hamburger-btn" aria-label ="Abrir menú">
+            ☰
+        </button>
+    </nav>
+
+    <!-- Fin del navbar-->
+
+    <Hero class="hero">
+        
+        <div class="left">
+            <h1>El sabor de <span>Japón,</span> traido
+                a tu mesa
+            </h1>
+            <p>
+                Ramen artesanal inspirado en la tradición japonesa, preparado con ingredientes seleccionados y un toque contemporáneo.
+            </p>
+            <div class="ctaSection">
+                <button class="ctaBtn">Reservar una mesa</button>
+            </div>
+        </div>
+
+
+        <div class="right">
+
+        </div>
+    </Hero>
+
+    <div class="menuSection">
+        <h4>Explora las opciones del menu</h4>
+        <h2>Lo mejor del Menu</h2>
+
+        <!-- Botones de Filtrado/Pestañas -->
+        <div class="menu-tabs">
+            <button class="tab-btn active" data-target="ramen">Ramen</button>
+            <button class="tab-btn" data-target="entradas">Entradas</button>
+            <button class="tab-btn" data-target="bebidas">Bebidas</button>
+        </div>
+
+    <!-- Contenedor Principal del Menú -->
+        <div class="menu-container">
+
+            <!-- ===== SECCIÓN RAMEN (5 platos) ===== -->
+            <div class="dishes-grid" data-category="ramen">
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="src/img/ramen1.jpg" alt="Tonkotsu Ramen">
+                    </div>
+                    <div class="dish-info">
+                        <h3>Tonkotsu Ramen</h3>
+                        <p>Caldo denso de cerdo cocinado por 12 horas, fideos artesanales y chashu.</p>
+                        <span class="price">$14.50</span>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="src/img/ramen2.jpg" alt="Miso Ramen">
+                    </div>
+                    <div class="dish-info">
+                        <h3>Miso Ramen</h3>
+                        <p>Caldo a base de miso rojo, brotes de bambú, huevo marinado y cebollín.</p>
+                        <span class="price">$13.00</span>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="src/img/ramen3.jpg" alt="Shoyu Ramen">
+                    </div>
+                    <div class="dish-info">
+                        <h3>Shoyu Ramen</h3>
+                        <p>Sopa clara a base de salsa de soya tradicional con pollo y algas nori.</p>
+                        <span class="price">$12.50</span>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="src/img/ramen4.jpg" alt="Spicy Tan Tan">
+                    </div>
+                    <div class="dish-info">
+                        <h3>Spicy Tan Tan</h3>
+                        <p>Caldo picante de sésamo y chili con carne picada de cerdo y aceite de sésamo.</p>
+                        <span class="price">$15.00</span>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="src/img/ramen5.jpg" alt="Veggie Ramen">
+                    </div>
+                    <div class="dish-info">
+                        <h3>Veggie Ramen</h3>
+                        <p>Caldo vegetal concentrado con hongos shiitake, tofu fresco y pak choi.</p>
+                        <span class="price">$13.50</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== SECCIÓN ENTRADAS (5 platos) ===== -->
+            <div class="dishes-grid" data-category="entradas">
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="src/img/gyoza.jpg" alt="Gyozas de Cerdo">
+                    </div>
+                    <div class="dish-info">
+                        <h3>Gyozas de Cerdo</h3>
+                        <p>5 empanadillas japonesas al vapor y doradas a la plancha con salsa ponzu.</p>
+                        <span class="price">$7.00</span>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="src/img/edamame.jpg" alt="Edamame Picante">
+                    </div>
+                    <div class="dish-info">
+                        <h3>Edamame Picante</h3>
+                        <p>Vainas de soya al vapor salteadas con sal marina y aceite de chili.</p>
+                        <span class="price">$5.50</span>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="src/img/takoyaki.jpg" alt="Takoyaki">
+                    </div>
+                    <div class="dish-info">
+                        <h3>Takoyaki</h3>
+                        <p>Bolitas de pulpo estilo Osaka con salsa takoyaki, mayonesa y katsuobushi.</p>
+                        <span class="price">$8.00</span>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="src/img/bao.jpg" alt="Bao de Chashu">
+                    </div>
+                    <div class="dish-info">
+                        <h3>Bao de Chashu</h3>
+                        <p>Pan al vapor relleno de panceta de cerdo glaseada y pepino encurtido.</p>
+                        <span class="price">$6.50</span>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="src/img/karaage.jpg" alt="Chicken Karaage">
+                    </div>
+                    <div class="dish-info">
+                        <h3>Chicken Karaage</h3>
+                        <p>Pollo frito al estilo japonés marinado en jengibre, soya y ajo.</p>
+                        <span class="price">$7.50</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== SECCIÓN BEBIDAS (5 opciones) ===== -->
+            <div class="dishes-grid" data-category="bebidas">
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="src/img/ramune.jpg" alt="Ramune Tradicional">
+                    </div>
+                    <div class="dish-info">
+                        <h3>Ramune Tradicional</h3>
+                        <p>Gaseosa japonesa clásica con sabor a lima-limón en botella de canica.</p>
+                        <span class="price">$3.50</span>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="src/img/matcha.jpg" alt="Iced Matcha Latte">
+                    </div>
+                    <div class="dish-info">
+                        <h3>Iced Matcha Latte</h3>
+                        <p>Té verde matcha ceremonial frío con leche de avena ligeramente endulzado.</p>
+                        <span class="price">$4.50</span>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="src/img/sapporo.jpg" alt="Cerveza Sapporo">
+                    </div>
+                    <div class="dish-info">
+                        <h3>Cerveza Sapporo</h3>
+                        <p>Cerveza lager japonesa premium, refrescante y de cuerpo ligero (330ml).</p>
+                        <span class="price">$5.00</span>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="src/img/sake.jpg" alt="Sake Junmai">
+                    </div>
+                    <div class="dish-info">
+                        <h3>Sake Junmai</h3>
+                        <p>Licor de arroz tradicional servido frío o caliente en jarra ochoko (180ml).</p>
+                        <span class="price">$9.00</span>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="src/img/te.jpg" alt="Té Sencha Caliente">
+                    </div>
+                    <div class="dish-info">
+                        <h3>Té Sencha Caliente</h3>
+                        <p>Té verde en hebras infusionado al momento en tetera tradicional.</p>
+                        <span class="price">$3.00</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- Fin de la section Menu -->
+
+    <div class="about">
+
+        <div class="gridAbout">
+                <div class="about-left">
+                    <p><span>Sobre Nosotros</span></p>
+                    <h2>Paciencia en cada bowl</h2>
+                    <p>En <span>Nintai</span> creemos que un buen ramen no se apresura. Cada caldo, cada ingrediente y cada detalle forma parte de una experiencia inspirada en la tradición japonesa y reinterpretada para disfrutarla hoy.</p>
+                    <div class="ctaSection">
+                     <button class="ctaBtn">Reservar una mesa</button>
+
+                     <div class="about-sectionCard">
+                            <div class="aboutcard">
+                                <h3>12 hrs</h3>
+                                <p>Horas de cocción lenta para lograr un caldo concentrado y lleno de umami.</p>
+                            </div>
+                            <div class="aboutcard">
+                                <h3>100%</h3>
+                                <p>Ingredientes frescos y fideos elaborados a diario en casa.</p>
+                            </div>
+                            <div class="aboutcard">
+                                <h3>5</h3>
+                                <p>Variedades de ramen creadas con recetas tradicionales.</p>
+                            </div>
+                            <div class="aboutcard">
+                                <h3>4.9 ★</h3>
+                                <p>Calificación promedio de quienes buscan una experiencia auténtica.</p>
+                            </div>
+                     </div>
+
+                    </div>
+                </div>
+                <div class="about-right_img">
+
+                </div>
+        </div>
+    </div> <!--Fin del About-->
+
+    <section class="why-us">
+    <!-- Columna Izquierda: Textos y Características -->
+    <div class="why-us-left">
+        <span class="subtitle">¿Poque escogernos?</span>
+        <h2>¿Por qué <span>Nintai</span>?</h2>
+
+        <div class="feature-cards">
+            <div class="feature-card">
+                <p>Productos escogidos para mantener el sabor y la calidad.</p>
+                <div class="feature-img">
+                    <img src="src/img/carne.png" alt="Ingredientes de calidad">
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <p>Tradición japonesa reinterpretada con una mirada contemporánea.</p>
+                <div class="feature-img">
+                    <img src="src/img/ensalada1.png" alt="Tradición japonesa">
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <p>Un espacio pensado para disfrutar, no solamente para comer.</p>
+                <div class="feature-img">
+                    <img src="src/img/ensalada2.png" alt="Espacio para disfrutar">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Columna Derecha: Imagen con Badge Flotante -->
+    <div class="why-us-right">
+        <!-- Badge flotante -->
+        <div class="badge-card">
+            <span>Establecidos desde</span>
+            <h3>2015</h3>
+        </div>
+        
+        <!-- Imagen Principal -->
+        <div class="why-us-img"></div>
+    </div>
+</section>
+    
+    <section class="sectionCta">
+        <h2>Tu próximo ramen empieza aquí.</h2>
+        <p>Reserva tu mesa y descubre Nintai.</p>
+
+         <div class="ctaSection">
+         <button class="ctaBtn">Reservar una mesa</button>
+    </section>
+
+    <section class="booking-section">
+    <span class="subtitle">Reserva una mesa</span>
+    <h2>¿Nos vemos en <span>Nintai</span>?</h2>
+
+    <form class="booking-form">
+        <!-- Fila 1: Nombre y Teléfono -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="bookingName">Booking Name</label>
+                <input type="text" id="bookingName" placeholder="Enter Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" placeholder="Enter Your Phone Number" required>
+            </div>
+        </div>
+
+        <!-- Fila 2: Fecha y Hora -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="bookingDate">Date</label>
+                <input type="date" id="bookingDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bookingTime">Time</label>
+                <input type="time" id="bookingTime" required>
+            </div>
+        </div>
+
+        <!-- Fila 3: Número de Personas (Ancho completo) -->
+        <div class="form-group full-width">
+            <label for="personNumber">Person of Number</label>
+            <input type="number" id="personNumber" placeholder="Person Of Number" min="1" max="20" required>
+        </div>
+
+        <!-- Botón Enviar -->
+        <button type="submit" class="submit-btn">Reserva una mesa</button>
+    </form>
+</section>
+
+
+    <footer>
+         <div class="footerInfo">
+                <h3>Tradicion en cada bowl</h3>
+
+                <div class="footerLocation">
+                    <P>Ubicacion <span> <br>Lima,Peru</span></P>
+                </div>
+                 <div class="footerPhone">
+                    <P>Numero de telefono <span><br>+888 999 999 999</span></P>
+                </div>
+         </div>
+    </footer>
+</body>
+</html>
