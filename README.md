@@ -1,3 +1,4 @@
+
 # 🍜 Nintai Ramen — Landing Page Web
 
 **Nintai Ramen** es una landing page moderna, responsive y visualmente atractiva diseñada para un restaurante de ramen artesanal inspirado en la gastronomía japonesa. El sitio busca transmitir una experiencia auténtica y sofisticada, destacando la historia de la marca, un menú variado y un sistema intuitivo para la reserva de mesas.
@@ -25,3 +26,8 @@
 3. **Sección Informativa:** Presentación de la marca y métricas clave (horas de cocción, valoraciones).
 4. **Formulario de Reservas:** Captura estructurada de datos (nombre, teléfono, fecha, hora y comensales).
 5. **Diseño Responsive:** Adaptado para una experiencia óptima en cualquier dispositivo.
+
+
+<img width="1920" height="1200" alt="Screenshot 2026-08-28 at 12 55 32 PM" src="https://github.com/user-attachments/assets/87dd15d0-dad2-40fc-9fe5-35ed64247130" />
+<img width="1920" height="1200" alt="Screenshot 2026-08-28 at 12 55 46 PM" src="https://github.com/user-attachments/assets/0d5cffed-81b3-4965-b0d6-cc7f3625618b" />
+<img width="1920" height="1200" alt="Screenshot 2026-08-28 at 12 56 18 PM" src="https://github.com/user-attachments/assets/6ac552f9-8119-4cdc-8c39-e59dd3919387" />
